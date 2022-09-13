@@ -1,0 +1,732 @@
+@charset "utf-8";
+/* Emergence Style */
+/* Modified based on Apple Safari reading mode Style */
+/* by YARINZ */
+/* Version : EmStyle CSS v1.0.3 (2021-03-14) */
+
+/* ===== 全局样式 ===== */
+
+
+/* 全局背景色（默认禁用） */
+
+/* body{
+    background-color: #fff7e3;
+} */
+
+/* 全局字体颜色 */
+body{
+    color: #061e34;
+}
+
+/* 全局字体与字间距调整（宋体版本） */
+p,
+div {
+    font-size: 1em;
+    font-family: 'Source Han Serif SC', 'Noto Serif SC', serif;
+    font-weight: 500;
+    letter-spacing:0.03em;
+}
+
+/* 全局字体与字间距调整（黑体版本）
+p,
+div {
+    font-size: 1em;
+    font-family: -apple-system, BlinkMacSystemFont,"Trebuchet MS", Helvetica, sans-serif;
+    font-weight: 500;
+    letter-spacing:0.03em;
+} */
+
+
+/* ===== 文字样式 ===== */
+
+/* 正文 */
+
+p{
+    line-height: 2em;
+}
+
+li {
+    line-height: 2em;
+}
+
+/* ol {
+    display: block;
+    list-style-type: decimal;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    } */
+
+/* 正文首行空一格 */
+/* .em_article_body{
+    text-indent: 1em;
+} */
+
+blockquote > p {
+    text-indent: 0em;
+}
+
+li > p{
+    text-indent: 0em;
+    line-height: 2em;
+    margin: 0;
+}
+
+/* 标题  */
+
+h1 {
+    font-size: 2.2em;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top:1.5em;
+    margin-bottom: 0.75em;
+    line-height: 2em;
+}
+
+h3 {
+    font-size: 1.25em;
+    margin-top:1.25em;
+    margin-bottom: 0.625em;
+    line-height: 2em;
+}
+
+h4,
+h5,
+h6 {
+    font-size: 1.125em;
+    margin: 1em 0;
+}
+
+/* 链接 */
+
+a {
+    text-decoration: none;
+    color: #061e34;
+    border-bottom:1.5px dashed #ffd600;
+}
+
+/* 链接变蓝色方案 */
+/* a:hover{
+    color: #005694;
+    border-bottom:2px  solid #005694;
+} */
+
+/* 链接变深黄方案 */
+a:hover{
+    color: #925328;
+    border-bottom:1.5px  solid #ffd600;
+}
+
+
+/* 块级引用 */
+
+blockquote{
+    border-left: 6px solid #ffd600;
+    color: #707070;
+    font-style: bold;
+    margin: 0 0 35px -0px;
+    padding-left: 20px;
+    background: linear-gradient(to right,#FFFAF4,#FFFFFF);
+}
+
+
+
+/* 行内代码 */
+
+p > code, li > code {
+    font-family: -apple-system, BlinkMacSystemFont, Menlo, Monaco, Consolas, Courier New, monospace;
+    color: #061E34;
+    background-color: #fff7e3;
+    font-size: .95em;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+
+
+/* 代码块 */
+pre {
+    margin: 0 0 1.5rem;
+    
+}
+
+pre {
+    font-family: -apple-system, BlinkMacSystemFont, Menlo, Monaco, Consolas, Courier New, monospace;
+    clear: both;
+    color: #f5d67b;
+    background: #1b1b1b;
+    padding: 0;
+    -moz-tab-size: 2;
+    -o-tab-size: 2;
+    tab-size: 2;
+    -ms-word-break: normal;
+    word-break: normal;
+    -webkit-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+    position: relative;
+    line-height: 28px;
+    border-radius: 8px;
+    /* 代码块与页面等宽 */
+    min-width: 700px;
+    /* 代码块缩进 */
+    /* min-width: 100px; */
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    max-width: 100%;
+    overflow: hidden
+}
+
+pre[rel]:not([rel=""]):before {
+    font-family: -apple-system, BlinkMacSystemFont, Menlo, Monaco, Consolas, Courier New, monospace;
+    font-style: normal;
+    font-weight: 800;
+    font-weight: 700;
+    font-size: .5rem;
+    content: attr(rel);
+    color: #fff;
+    position: absolute;
+    top: -.2rem;
+    right: .4rem;
+    padding: 0;
+    color: #ff7a18 !important
+}
+
+pre code {
+    scrollbar-color: #666 #201c29;
+    background: 0 0;
+    white-space: pre;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: scroll;
+    display: block;
+    max-width: 100%;
+    min-width: 100px;
+    font-size: 16px;
+    padding: 15px 20px 12px 22px;
+    line-height: 1.75
+}
+
+pre code::-webkit-scrollbar {
+    width: .5em;
+    height: .5em
+}
+
+pre code::-webkit-scrollbar-thumb {
+    background: #666;
+    border-radius: .5em;
+    box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, .25), inset -2px -2px 2px rgba(0, 0, 0, .25)
+}
+
+pre code::-webkit-scrollbar-track {
+    background: linear-gradient(90deg, #434343, #434343 1px, none 0, none)
+}
+
+@media(max-width:800px) {
+    pre code {
+        font-size: 11px;
+        padding: 15px 20px 10px 14px
+    }
+}
+
+code {
+    font-size: inherit;
+    font-family: -apple-system, BlinkMacSystemFont, Menlo, Monaco, Consolas, Courier New, monospace;
+}
+
+/* ===== 分割线 ===== */
+
+/* 常规分割线 */
+
+/* hr {
+	background-color: #ccc;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+} */
+
+/* 分割线 */
+
+hr {
+    overflow: visible;
+    padding: 0;
+    border: none;
+    border-top: medium none #333;
+    color: #333;
+    text-align: center;
+}
+
+hr:after {
+    content: "✣ ✣ ✣";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.2em;
+    padding: 0 0.25em;
+    color: gray;
+    background: white;
+}
+
+
+/* ===== 图片 ===== */
+
+img {
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+
+/* 可附标题内容元素 */
+
+figure {
+    margin: 0;
+}
+
+figcaption{
+    margin: 0;
+}
+
+
+
+
+/* ===== Emergence 顶部样式 ===== */
+
+/* Article Top Style */
+
+.em_article_top_line {
+    box-sizing: border-box;
+    height: 1px;
+    width: 100%;
+    background: black;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: none;
+}
+
+
+/* 文章副标题 */
+
+.em_article_top_subhead {
+    margin-top: 24px;
+    text-decoration: none;
+    padding-bottom: 1px;
+    color: #000000;
+    font-family: 'Source Han Serif SC', 'Noto Serif SC', serif;
+    /*'PingFang SC Regular','Roboto Condensed', 'Asap Condensed', 'neue-haas-unica', sans-serif; */
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 23px;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    border-bottom: 3px solid #ffd600;
+    display: inline-block;
+}
+
+
+/* 文章大标题 */
+
+.em_article_top_head {
+    font-family: 'Source Han Serif SC', 'Noto Serif SC', serif;
+    /* ,source-serif-pro, 'Source Serif Pro', 'Lyon Display Web', 'LyonDisplay-Medium', serif; */
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 64px;
+    letter-spacing: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* 文章描述 */
+
+.em_article_top_description {
+    color: #000000;
+    font-family: 'Source Han Serif SC', 'Noto Serif SC', serif;
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 1.8em;
+    color: gray;
+}
+
+/* 作者头像 */
+
+.em_article_top_post_avatar img {
+    display: block;
+    box-sizing: border-box;
+    width: 48px;
+    min-width: 48px;
+    height: 48px;
+    border: solid 2px #f8f8f0;
+    border-radius: 50%;
+}
+
+/* 文章作者 */
+
+.em_article_top_byline {
+    color: black;
+    display: inline-block;
+    font-family: 'Source Han Serif SC', 'Noto Serif SC', serif;
+    font-size: 12px;
+    line-height: 2em;
+    margin-bottom: 1.2em;
+
+}
+
+
+/* 文章作者 - i */
+
+.em_article_top_byline i {
+    margin-left: -3px;
+    margin-right: -3px;
+}
+
+
+/* 文章作者 - 加粗 */
+
+.em_article_top_bylinebold {
+    font-family: 'Source Han Serif SC', 'Noto Serif SC', serif;
+    /* 'HelveticaNeueW01-75Bold', 'HelveticaNeue Bold', 'Helvetica LT Std Bold', Helvetica, 'neue-haas-unica', sans-serif; */
+    text-align: center;
+}
+
+
+/* 文章日期 */
+
+.em_article_top_dateline {
+    color: #757575;
+    margin-top: 4px;
+    display: inline-block;
+    font-family: 'Source Han Serif SC', 'Noto Serif SC', serif;
+    font-size: 0.8em;
+    line-height: 2em;
+    margin-left: 0px;
+}
+
+
+/* 文章作者与日期分割线 */
+
+.em_article_top_chim {
+    font-family: 'Source Han Serif SC', 'Noto Serif SC', serif;
+    font-size: 16px;
+    line-height: 16px;
+    display: inline-block;
+    margin-left: 7px;
+    margin-right: 3px;
+}
+
+
+/* 文章题图 div */
+
+.em_article_top_articlehero {
+    width: 100%;
+    margin-top: 18px;
+    margin-bottom: 0px;
+    display: flex;
+    flex-flow: column;
+}
+
+
+/* 文章题图图片 img */
+
+.em_article_top_articlehero img {
+    width: 100%;
+}
+
+
+/* 文章其他内容 */
+
+.em_article_top_metrics {
+    font-family: 'Source Han Serif SC', 'Noto Serif SC', serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 10px;
+    margin-bottom: 18px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.em_article_top_metricsItem {
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.em_article_top_metricsItem i {
+    font-size: 14px;
+    margin-right: 3px;
+}
+
+.em_article_top_metricsItemCircle {
+    border: 0px solid black;
+    border-radius: 3000px;
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+.em_article_top_metricsItemCircle:hover {
+    opacity: .6;
+}
+
+.em_article_top_metricsItemCircle i {
+    font-size: 12px !important;
+    margin-right: 0px !important;
+    color: white;
+}
+
+.em_article_top_metricsItemCircle a {
+    line-height: 0px;
+}
+
+.em_article_top_metricsItemComment {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(102, 102, 102);
+    border-image: initial;
+    border-radius: 4px;
+    padding: 4px;
+    position: relative;
+    top: 0px;
+    min-width: 20px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.em_article_top_metricsItemComment::before {
+    bottom: -7px;
+    content: "";
+    display: block;
+    left: 9px;
+    position: absolute;
+    width: 0px;
+    border-color: rgb(102, 102, 102) transparent;
+    border-style: solid;
+    border-width: 6px 0px 0px 8px;
+}
+
+.em_article_top_metricsItemComment::after {
+    bottom: -6px;
+    content: "";
+    display: block;
+    left: 10px;
+    position: absolute;
+    width: 0px;
+    border-color: rgb(255, 255, 255) transparent;
+    border-style: solid;
+    border-width: 6px 0px 0px 6px;
+}
+
+#em_article_top_metricsItem_bookmark {
+    cursor: pointer;
+    position: relative;
+    top: 0px;
+}
+
+.em_article_top_metricsItemCSVG {
+    position: relative;
+    top: 9px;
+    height: 26px;
+}
+
+
+/* 付费阅读渐变色 */
+
+.hide{
+    display: none;
+}
+ 
+.more{
+    position: relative;
+    text-align: center;
+    font-size: 1.1em;
+    height: 2em;
+    line-height: 2em;
+    display: block;
+}
+ 
+.more:before{
+    position: absolute;
+    border-bottom: 1px dashed #ddd;
+    bottom: 2em;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 6em;
+    z-index: 2;
+    background-image: linear-gradient(to bottom,rgba(255,255,255,.01),#fff);
+}
+
+
+
+
+/* ===== 阅读模式 ===== */
+/* Modified based on Apple Safari reading mode Style */
+
+#article {
+    text-rendering: optimizeLegibility;
+}
+
+#article pre {
+    white-space: pre-wrap;
+}
+
+#article * {
+    /* Scale down anything larger than our view. Max-width maintains aspect ratios on images. */
+    /* 缩小比我们的视野更大的东西。最大宽度可保持图像的宽高比。 */
+    max-width: 100%;
+}
+
+#article img {
+    /* By default, images are centered on their own line. */
+    /* 默认情况下，图像在它们自己的直线上居中。 */
+    margin: 0.5em auto;
+    display: block;
+    height: auto;
+}
+
+#article img.reader-image-tiny {
+    display: inline;
+    margin: 0;
+}
+
+#article .leading-image,
+figure,
+.auxiliary {
+    margin-bottom: .25em;
+}
+
+#article .leading-image img {
+    margin: auto;
+    display: block;
+    clear: both;
+}
+
+#article .leading-image .credit {
+    margin: 0;
+    text-align: right;
+}
+
+#article .leading-image .caption,
+#article .leading-image .credit,
+#article figcaption,
+#article .auxiliary figcaption {
+    text-align:center;
+    font-size: 0.75em;
+    line-height: 1.5em;
+    margin-top: 1em;
+    width: 100%;
+    color: gray;
+}
+
+#article .leading-image .credit+.caption {
+    margin-top: 0.1em;
+}
+
+#article .auxiliary {
+    display: block;
+    clear: both;
+    font-size: 0.75em;
+    line-height: 1.4em;
+    text-align: start;
+}
+
+#article .auxiliary>* {
+    -webkit-margin-start: 0;
+}
+
+#article .auxiliary img,
+#article .auxiliary>*:first-child {
+    margin: 0;
+}
+
+
+/* If the element immediately after an image is inline, it might bump up against the image. */
+/* 如果紧接图像后的元素是内联的，则它可能会碰到图像。 */
+
+#article .auxiliary img+* {
+    display: block;
+}
+
+#article .auxiliary figcaption {
+    font-size: 100%;
+}
+
+#article .auxiliary * {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+#article .float.left {
+    float: left;
+    margin-right: 20px;
+}
+
+#article .float.right {
+    float: right;
+    margin-left: 20px;
+}
+
+#article .clear {
+    clear: both;
+}
+
+#article ul.list-style-type-none,
+#article ol.list-style-type-none,
+#article .list-style-type-none>li {
+    list-style-type: none;
+    -webkit-padding-start: 0;
+}
+
+/* Collapse excess whitespace. */
+/* 折叠多余的空白。 */
+
+.page p>p:empty,
+.page div>p:empty,
+.page p>div:empty,
+.page div>div:empty,
+.page p+br,
+.page p>br:only-child,
+.page div>br:only-child,
+.page img+br {
+    display: none;
+}
+
+.page:first-of-type .title {
+    display: block;
+}
+
+.page table {
+    font-size: 0.9em;
+    text-align: start;
+    word-wrap: break-word;
+    border-collapse: collapse;
+}
+
+.page table td,
+.page table th {
+    padding: 0.25em 0.5em;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.page table th {
+    background-color: rgba(0, 0, 0, 0.025);
+}
+
