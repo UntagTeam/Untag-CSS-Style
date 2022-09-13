@@ -1,28 +1,21 @@
 @charset "utf-8";
-/* Emergence Style */
-/* Modified based on Apple Safari reading mode Style */
+/* Untag Style */
 /* by YARINZ */
-/* Version : EmStyle CSS v1.0.3 (2021-03-14) */
+/* Version : UntagStyle CSS v1.0.4 (2022-09-12) */
+/* Modified based on Apple Safari reading mode Style */
 
 /* ===== 全局样式 ===== */
-
-
-/* 全局背景色（默认禁用） */
-
-/* body{
-    background-color: #fff7e3;
-} */
 
 /* 全局字体颜色 */
 body{
     color: #061e34;
 }
 
-/* 全局字体与字间距调整（宋体版本） */
+/* 全局字体与字间距调整（思源宋体版本） */
 p,
 div {
     font-size: 1em;
-    font-family: 'Source Han Serif SC', 'Noto Serif SC', serif;
+    font-family: 'Noto Serif SC', 'Source Han Serif SC', serif;
     font-weight: 500;
     letter-spacing:0.03em;
 }
@@ -48,21 +41,6 @@ p{
 li {
     line-height: 2em;
 }
-
-/* ol {
-    display: block;
-    list-style-type: decimal;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-    } */
-
-/* 正文首行空一格 */
-/* .em_article_body{
-    text-indent: 1em;
-} */
 
 blockquote > p {
     text-indent: 0em;
@@ -109,12 +87,6 @@ a {
     border-bottom:1.5px dashed #ffd600;
 }
 
-/* 链接变蓝色方案 */
-/* a:hover{
-    color: #005694;
-    border-bottom:2px  solid #005694;
-} */
-
 /* 链接变深黄方案 */
 a:hover{
     color: #925328;
@@ -133,8 +105,6 @@ blockquote{
     background: linear-gradient(to right,#FFFAF4,#FFFFFF);
 }
 
-
-
 /* 行内代码 */
 
 p > code, li > code {
@@ -146,8 +116,6 @@ p > code, li > code {
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
 }
-
-
 
 /* 代码块 */
 pre {
@@ -295,10 +263,7 @@ figcaption{
     margin: 0;
 }
 
-
-
-
-/* ===== Emergence 顶部样式 ===== */
+/* ===== Untag 顶部样式 ===== */
 
 /* Article Top Style */
 
@@ -442,111 +407,6 @@ figcaption{
     width: 100%;
 }
 
-
-/* 文章其他内容 */
-
-.em_article_top_metrics {
-    font-family: 'Source Han Serif SC', 'Noto Serif SC', serif;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 16px;
-    margin-top: 10px;
-    margin-bottom: 18px;
-    margin-left: auto !important;
-    margin-right: auto !important;
-}
-
-.em_article_top_metricsItem {
-    display: inline-block;
-    margin-right: 4px;
-}
-
-.em_article_top_metricsItem i {
-    font-size: 14px;
-    margin-right: 3px;
-}
-
-.em_article_top_metricsItemCircle {
-    border: 0px solid black;
-    border-radius: 3000px;
-    width: 26px;
-    height: 26px;
-    text-align: center;
-    line-height: 26px;
-    display: inline-flex !important;
-    align-items: center;
-    justify-content: center;
-    background: black;
-    color: white;
-    cursor: pointer;
-}
-
-.em_article_top_metricsItemCircle:hover {
-    opacity: .6;
-}
-
-.em_article_top_metricsItemCircle i {
-    font-size: 12px !important;
-    margin-right: 0px !important;
-    color: white;
-}
-
-.em_article_top_metricsItemCircle a {
-    line-height: 0px;
-}
-
-.em_article_top_metricsItemComment {
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgb(102, 102, 102);
-    border-image: initial;
-    border-radius: 4px;
-    padding: 4px;
-    position: relative;
-    top: 0px;
-    min-width: 20px;
-    text-align: center;
-    cursor: pointer;
-    font-size: 12px;
-}
-
-.em_article_top_metricsItemComment::before {
-    bottom: -7px;
-    content: "";
-    display: block;
-    left: 9px;
-    position: absolute;
-    width: 0px;
-    border-color: rgb(102, 102, 102) transparent;
-    border-style: solid;
-    border-width: 6px 0px 0px 8px;
-}
-
-.em_article_top_metricsItemComment::after {
-    bottom: -6px;
-    content: "";
-    display: block;
-    left: 10px;
-    position: absolute;
-    width: 0px;
-    border-color: rgb(255, 255, 255) transparent;
-    border-style: solid;
-    border-width: 6px 0px 0px 6px;
-}
-
-#em_article_top_metricsItem_bookmark {
-    cursor: pointer;
-    position: relative;
-    top: 0px;
-}
-
-.em_article_top_metricsItemCSVG {
-    position: relative;
-    top: 9px;
-    height: 26px;
-}
-
-
 /* 付费阅读渐变色 */
 
 .hide{
@@ -573,8 +433,6 @@ figcaption{
     z-index: 2;
     background-image: linear-gradient(to bottom,rgba(255,255,255,.01),#fff);
 }
-
-
 
 
 /* ===== 阅读模式 ===== */
@@ -656,7 +514,6 @@ figure,
 #article .auxiliary>*:first-child {
     margin: 0;
 }
-
 
 /* If the element immediately after an image is inline, it might bump up against the image. */
 /* 如果紧接图像后的元素是内联的，则它可能会碰到图像。 */
