@@ -233,11 +233,14 @@
 /* 图片描述 */
 
 .markdown-body figure {
-    margin: 0;
+    margin: 0.5em 0;
+    text-align: center;
 }
 
 .markdown-body figcaption {
-    margin: 0;
+    margin: 0.5em 0;
+    text-align: center;
+    color: #707070;
 }
 
 /* ===== 分割线 ===== */
