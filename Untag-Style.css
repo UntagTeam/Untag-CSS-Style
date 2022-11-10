@@ -438,28 +438,29 @@
 }
 
 /* 文内按钮 */
-.markdown-body .ut_button {
+selector .ut_button {
     background-color: #dce7ef;
     color: #4e81ae;
     border: 2px solid #4e81ae;
     padding: 2px 10px;
     border-radius: 10px;
-    font-family: 'Source Han Sans',sans-serif;
     cursor: pointer;
     transition: 0.5s;
 }
-.markdown-body .ut_button:hover {
+selector .ut_button:hover {
     background-color: #E6F0F5 !important;
     transition: 0.5s;
 }
-.markdown-body .ut_button:active {
+selector .ut_button:active {
     background-color: #A0B8CD !important;
     transition: 0.1s;
 }
-.markdown-body .ut_button_a{
+selector .ut_button_a{
     color: #4e81ae !important;
+    font-family: 'Source Han Sans',sans-serif !important;
     border-bottom: 0px !important;
 }
+
 
 /* ===== 阅读模式 ===== */
 /* Modified based on Apple Safari reading mode Style */
