@@ -5,7 +5,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
     <title>Untag Markdown CSS demo</title>
-    <meta name="color-scheme" content="light dark">
     <!-- 试用 Untag Style CSS -->
     <link rel="stylesheet" href="../untag-style.css">
     <!-- 试用 github-markdown CSS -->
@@ -19,18 +18,6 @@
             padding: 45px;
         }
 
-        @media (prefers-color-scheme: dark) {
-            body {
-                background-color: #0d1117;
-            }
-        }
-    </style>
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css">
-    <style>
-        .github-fork-ribbon:before {
-            background-color: #121612;
-        }
     </style>
 </head>
 
@@ -42,6 +29,13 @@
                     style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
 
             <p>几乎所有 Markdown 应用程序都支持 John Gruber 原始设计文档中列出的 Markdown 基本语法。但是，Markdown 处理程序之间存在着细微的变化和差异，我们都会尽可能标记出来。</p>
+
+            <p><span class="ut_button"><a class="ut_button_a">Shortcuts 文章翻译下载链接</a></span></p>
+            <p><span class="ut_button">测试</span></p>
+
+            <p>录制期间，右侧的编辑界面是全黑的，但只要左下角有持续读秒，就说明已经在正常录制了。注意单次录制的最长时间是 30 分钟。<span class="ut_button">测试</span>
+                等你录制完屏幕后会有一个预览视频，点击“保存并编辑”，就会存到本地的下载目录中。格式是 webm 格式的，此时保存的文件是原分辨率保存。文件体积也并不算大。
+            </p>
 
             <h2 id="headings">标题（Headings）<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon=""
                     href="#headings" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
@@ -852,7 +846,8 @@
 
             <p>CommonMark 和其它几种轻量级标记语言可以让你使用括号（<code class="language-plaintext highlighter-rouge">)</code>）作为分隔符（例如
                 <code class="language-plaintext highlighter-rouge">1) First item</code>），但并非所有的 Markdown
-                应用程序都支持此种用法，因此，从兼容的角度来看，此用法不推荐。为了兼容起见，请只使用英文句点作为分隔符。</p>
+                应用程序都支持此种用法，因此，从兼容的角度来看，此用法不推荐。为了兼容起见，请只使用英文句点作为分隔符。
+            </p>
 
             <table class="table table-bordered">
                 <thead class="thead-light">
