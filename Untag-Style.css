@@ -259,7 +259,7 @@
 
 .markdown-body hr {
     overflow: visible;
-    padding: 0;
+    padding: 1em;
     border: none;
     border-top: medium none #333;
     color: #333;
