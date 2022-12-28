@@ -1,8 +1,9 @@
 @charset "utf-8";
 /* Untag Style */
 /* by YARINZ */
-/* Version : Untag-Style CSS v1.0.5 (2022-10-24) */
-/* Modified based on Apple Safari reading mode Style */
+/* WebSite: https://utgd.net */
+/* Github : https://github.com/UntagTeam/Untag-CSS-Style */
+/* Version : Untag-Style CSS v1.0.6 (2022-12-28) */
 
 /* ===== 全局样式 ===== */
 
@@ -438,7 +439,8 @@
 }
 
 /* 文内按钮 */
-selector .ut_button {
+
+.ut_button {
     background-color: #dce7ef;
     color: #4e81ae;
     border: 2px solid #4e81ae;
@@ -447,16 +449,17 @@ selector .ut_button {
     cursor: pointer;
     transition: 0.5s;
 }
-selector .ut_button:hover {
+.ut_button:hover {
     background-color: #E6F0F5 !important;
     transition: 0.5s;
 }
-selector .ut_button:active {
+.ut_button:active {
     background-color: #A0B8CD !important;
     transition: 0.1s;
 }
-selector .ut_button_a{
+.ut_button_a{
     color: #4e81ae !important;
+    /* 按钮中使用无衬线字体 */
     font-family: 'Source Han Sans',sans-serif !important;
     border-bottom: 0px !important;
 }
@@ -475,13 +478,11 @@ selector .ut_button_a{
 
 .markdown-body #article * {
     /* Scale down anything larger than our view. Max-width maintains aspect ratios on images. */
-    /* 缩小比我们的视野更大的东西。最大宽度可保持图像的宽高比。 */
     max-width: 100%;
 }
 
 .markdown-body #article img {
     /* By default, images are centered on their own line. */
-    /* 默认情况下，图像在它们自己的直线上居中。 */
     margin: 0.5em auto;
     display: block;
     height: auto;
@@ -543,7 +544,6 @@ figure,
 }
 
 /* If the element immediately after an image is inline, it might bump up against the image. */
-/* 如果紧接图像后的元素是内联的，则它可能会碰到图像。 */
 
 .markdown-body #article .auxiliary img+* {
     display: block;
@@ -580,7 +580,6 @@ figure,
 }
 
 /* Collapse excess whitespace. */
-/* 折叠多余的空白。 */
 
 .page p>p:empty,
 .page div>p:empty,
